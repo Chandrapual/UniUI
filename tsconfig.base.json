@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "useDefineForClassFields": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@uniui/core": ["packages/core/src/index.ts"],
+      "@uniui/core/styles.css": ["packages/core/src/styles.css"],
+      "@uniui/theme": ["packages/theme/src/index.ts"],
+      "@uniui/hooks": ["packages/hooks/src/index.ts"],
+      "@uniui/utils": ["packages/utils/src/index.ts"]
+    }
+  }
+}
+

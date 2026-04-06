@@ -1,0 +1,53 @@
+.uniui-button {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-uni border border-transparent px-4 font-semibold transition-all duration-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.uniui-button:focus-visible {
+  box-shadow:
+    0 0 0 2px var(--uniui-button-focus),
+    0 0 0 4px var(--uniui-color-surface);
+}
+
+.uniui-button--primary {
+  --uniui-button-focus: var(--uniui-color-primary);
+  @apply bg-primary text-primary-foreground shadow-sm hover:brightness-95;
+}
+
+.uniui-button--secondary {
+  --uniui-button-focus: var(--uniui-color-secondary);
+  @apply bg-secondary text-secondary-foreground shadow-sm hover:brightness-95;
+}
+
+.uniui-button--outline {
+  --uniui-button-focus: var(--uniui-color-border);
+  @apply border-border bg-transparent text-foreground hover:bg-muted;
+}
+
+.uniui-button--ghost {
+  --uniui-button-focus: var(--uniui-color-border);
+  @apply bg-transparent text-foreground hover:bg-muted;
+}
+
+.uniui-button--sm {
+  @apply h-9 px-3 text-sm;
+}
+
+.uniui-button--md {
+  @apply h-10 px-4 text-sm;
+}
+
+.uniui-button--lg {
+  @apply h-12 px-5 text-base;
+}
+
+.uniui-button--loading {
+  @apply cursor-wait;
+}
+
+.uniui-button__spinner {
+  @apply h-4 w-4 shrink-0 animate-spin rounded-full border-2 border-current border-r-transparent;
+}
+
+.uniui-button__label {
+  @apply inline-flex items-center;
+}
